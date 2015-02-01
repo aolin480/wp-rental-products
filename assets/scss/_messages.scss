@@ -1,0 +1,27 @@
+.idea-rental-notice{
+	max-width: 1000px;
+	margin: 20px auto;
+	background: #eee;
+	border-top: 2px solid #5DBA47;
+	border-bottom: 1px solid #aaa;
+	
+	a{
+		color: #999;
+		transition: all .3s ease;
+		text-decoration: underline !important;
+		&:hover{
+			color: #DC1F2D;
+		}
+	}
+
+	&.error{
+		border-top: 2px solid #DC1F2D;
+		border-bottom: 1px solid #aaa;	
+	}
+
+	p{
+		margin: 0;
+		padding: 1% 2%;	
+	}
+
+}

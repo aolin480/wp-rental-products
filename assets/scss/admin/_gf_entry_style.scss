@@ -1,0 +1,29 @@
+.lead-submission{
+	.entry-detail-view{
+		> thead{
+			display: none;
+		}
+
+		.entry-view-section-break{
+			background: #666666;
+			color: #fff;
+			font-size: 1.6em;			
+		}
+		
+		tr:nth-child(even){ 
+			min-width: 24%; float: left;
+			background: #f5f5f5;			
+			border-right: 1px solid #eee;
+		}
+
+		tr:nth-child(odd){ min-width: 75%; float: left;}
+		tr:nth-child( 1 ){ min-width: 100%; float: none; }
+		
+		.entry-view-field-name{			
+		}
+
+		.entry-view-field-value{			
+		}
+
+	}
+}

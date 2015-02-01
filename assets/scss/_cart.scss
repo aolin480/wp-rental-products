@@ -1,0 +1,414 @@
+.rental-cart{
+
+  table{
+    width: 100%;    
+    font-family: "Open Sans",Arial,sans-serif;    
+    border-bottom: 1px solid #eee;
+
+    td, th{
+      padding: 1% 2%;
+    }
+
+    thead{
+      th{
+        text-align: left;
+        background: #666;
+        color: #fff;
+      }
+
+      th.product_quantity{
+        text-align: center;        
+      }
+    }
+
+    tbody{
+      
+
+      td.product_image{
+        width: 15%;
+        color: #666;
+        img{
+          width: 100%;
+          height: auto !important;
+        }
+      }
+
+      td.product_title{
+        width: 60%;
+        color: #666;
+      }
+
+      td.product_rental_term{
+        width: 10%;
+        color: #666;
+      }
+
+      td.product_quantity{
+        width: 10%;        
+        text-align: center;
+
+        input[type=text]{
+          text-align: center;
+          max-width: 35%;
+          color: #777;
+        }        
+
+      }
+
+      td.product_delete{
+        width: 10%;
+        text-align: center;
+      }
+
+      td:last-child{
+        padding: 0;      
+      }
+
+    }
+
+  }
+
+  .cart-utility, .other-utility{
+    ul{
+      padding: 0; margin: 0;
+      margin-top: 10px;
+      list-style: none;
+      float: right;
+           
+
+      li{
+        padding: 10px 0;
+        display: inline-block;
+        a{  }        
+      }
+
+    }
+  }
+
+  .other-utility{
+    float: left;
+  }
+
+  &.quick-quote-table{    
+
+    table{
+      background: #f5f5f5;
+      td{
+        padding: 1%;
+        
+      }
+
+      tbody{
+        td.select{    
+          width: auto;
+
+          select{
+            line-height: 1em;
+            width: 100%;
+            padding-top: 0;
+            font-size: 0.75em;
+            color: #222;
+          }
+        }
+        
+        td.quantity{    
+          width: 7.5%;      
+          input[type=text]{
+            width: 100%;
+            max-width: 50px;
+            text-align: center;
+          }
+        }
+
+        td:last-child{
+          padding: 0;                
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+/* Quote Form */
+
+div.gform_wrapper{  
+  form{
+    select{
+      //padding: 1em .5em !important;    
+    }
+    
+    input[type=submit]{
+      background: #E60000;
+      color: #fff;
+      border: none;
+      font-family: 'open sans', sans-serif;
+      padding: 0.25em 1em;
+      transition: all .3s ease;
+      border-radius: 3px;
+        &:hover{
+          background: black;
+          opacity: 0.8;
+        }
+
+    }
+  }
+
+  .gform_footer{
+      
+      &:after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      
+      input[type=submit]{
+        float: right;
+      }
+  }
+
+}
+
+
+@media (max-width: 580px) {
+  .rental-cart{
+
+  table{
+    width: 100%;
+    display: block;
+    
+    th{
+      display: none;
+    }
+
+    tbody{
+      display: block;
+
+      td{
+        display: block;
+      }
+      
+      tr[role=row]{
+        border-bottom: 1px solid #eee;   
+        width: 100%;
+        display: inline-block;     
+      }
+
+      td.product_image, td.product_title, td.product_quantity, td.product_delete{
+        float: left;
+        width: 46%;
+      }
+
+      td.product_image{                        
+      }
+
+      td.product_title{                
+        padding-top: 10%;        
+        margin-bottom: 5%;
+        text-align: center;
+      }
+
+      td.product_rental_term{
+        width: 10%;        
+      }
+
+      td.product_quantity{       
+        float: left;
+        clear: both;      
+        margin-bottom: 5%;  
+        
+        input[type=text]{
+          text-align: center;                    
+        }        
+
+      }
+
+      td.product_delete{                
+        text-align: center;               
+        
+        a{
+          display: block;
+          height: 100%;
+          padding-top: 3%;
+        }
+
+      }
+
+      td:last-child{
+        padding: 0;      
+      }
+
+    }
+
+  }
+
+  .cart-utility, .other-utility{
+    ul{
+      padding: 0; margin: 0;
+      margin-top: 10px;
+      list-style: none;
+      float: right;
+           
+
+      li{
+        padding: 10px 0;
+        display: inline-block;
+        a{  }        
+      }
+
+    }
+  }
+
+  .other-utility{
+    float: left;
+  }
+
+  &.quick-quote-table{    
+
+    table{
+      background: #f5f5f5;
+      padding: 2% 5%;      
+
+      td{
+        padding: 1%;
+        
+      }
+
+      tbody{
+        > tr:before{          
+          background: #dc1f2d;
+          color: #fff;
+          padding: 2% 0;
+        }
+        
+        > tr:nth-child(2):before{          
+          content: "Item 1";
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        
+        > tr:nth-child(3):before{
+          content: "Item 2";
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        
+        > tr:nth-child(4):before{
+          content: "Item 3";
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        
+        > tr:nth-child(5):before{
+          content: "Item 4";
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        tr{
+          display: block;
+          text-align: center;
+        }
+
+        td.select{                
+          display: block;
+          margin: 0 auto;        
+
+          select{
+            display: block;
+            width: 100%;            
+            line-height: 1em;            
+            padding-top: 0;
+            font-size: 0.75em;
+            color: #222;            
+          }
+
+        }
+        
+        td.quantity{    
+          width: 100%;          
+          text-align: center;
+          
+          &:after{
+            display: block;
+            content: "";
+            clear: left;
+            margin-bottom: 10px;
+          }
+
+          &:before{            
+            display: inline-block;
+            content: "Quantity: ";
+            width: 35%;
+            float: left;
+            vertical-align: middle;
+          }
+
+          input[type=text]{             
+            float: left;            
+            display: inline-block;            
+            width: 55%;
+            max-width: 715px;
+            text-align: center;
+          }
+        }
+
+        td:last-child{
+          padding: 0;                
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+/* Quote Form */
+
+div.gform_wrapper{  
+  form{
+    select{
+      //padding: 1em .5em !important;    
+    }
+    
+    input[type=submit]{
+      background: #E60000;
+      color: #fff;
+      border: none;
+      font-family: 'open sans', sans-serif;
+      padding: 0.25em 1em;
+      transition: all .3s ease;
+      border-radius: 3px;
+        &:hover{
+          background: black;
+          opacity: 0.8;
+        }
+
+    }
+  }
+
+  .gform_footer{
+      
+      &:after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      
+      input[type=submit]{
+        float: right;
+      }
+  }
+
+}
+}
+
